@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Protótipo - Controle Financeiro</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    section {
+      border: 1px solid black;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    button {
+      padding: 6px 12px;
+    }
+
+    .item {
+      border-top: 1px solid black;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Controle Financeiro</h1>
+
+  <section>
+    <h2>Resumo</h2>
+    <p>Receitas: R$ 0,00</p>
+    <p>Despesas: R$ 0,00</p>
+    <p>Saldo: R$ 0,00</p>
+  </section>
+
+  <section>
+    <h2>Novo Lançamento</h2>
+
+    <label>Descrição</label>
+    <input type="text">
+
+    <label>Valor</label>
+    <input type="number">
+
+    <label>Tipo</label>
+    <select>
+      <option>Receita</option>
+      <option>Despesa</option>
+    </select>
+
+    <label>Categoria</label>
+    <select>
+      <option>Alimentação</option>
+      <option>Transporte</option>
+      <option>Moradia</option>
+      <option>Outros</option>
+    </select>
+
+    <label>Data</label>
+    <input type="date">
+
+    <button>Adicionar</button>
+  </section>
+
+  <section>
+    <h2>Histórico</h2>
+
+    <div class="item">
+      <p>Salário - Receita - R$ 2000</p>
+    </div>
+
+    <div class="item">
+      <p>Mercado - Despesa - R$ 300</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
